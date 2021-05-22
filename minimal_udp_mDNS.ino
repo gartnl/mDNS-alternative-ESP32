@@ -15,9 +15,9 @@
 
 #define showM // comment out if you don't want the LED to blink on multicast reception
 
-const char * ssid = "MADNET";
-const char * password = "a1a2a3a4a5";
-const char hostname[] = "udptest";
+const char * ssid = "*********"; // use your own credentials
+const char * password = "**********";
+const char hostname[] = "udptest"; // and hostname
 
 AsyncUDP mmDNS;
 #ifdef showM
