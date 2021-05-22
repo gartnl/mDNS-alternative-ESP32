@@ -6,13 +6,14 @@
    does not advertise services, or respond to service requests
 
    But does the job for finding a device in a local network
-
+   
+   written by gartnl 22-05-2021, version 1.0
 */
 #include "WiFi.h"
 #include "AsyncUDP.h"
 #include <Ticker.h>
 
-#define showM // comment out if you don't want the LED to blijk on multicast reception
+#define showM // comment out if you don't want the LED to blink on multicast reception
 
 const char * ssid = "MADNET";
 const char * password = "a1a2a3a4a5";
@@ -52,6 +53,7 @@ void setup()
       });
       //
 #endif
+       // the core of it all
       if (compareHost(packet.data(), hostname)) { // yep, it's me they're looking for
         char response[packet.length() + 10]; // buffer to response
         memcpy ( response, packet.data(), packet.length() - 4 ); //copy original request to response minus last 4 bytes
