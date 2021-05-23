@@ -50,6 +50,7 @@ void setup()
       digitalWrite(2, 1);
       got_packet.attach(0.05, []() {
         digitalWrite(2, 0);
+        got_packet.detach();
       });
       //
 #endif
