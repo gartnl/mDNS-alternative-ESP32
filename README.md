@@ -7,10 +7,12 @@ the default AsyncUDP library.
 usage: 
 
 -Define an object of type AmDNS object_name(char * your_host_name)
+
 -After connecting to your network start the responder by object_name.begin()
 
 
 TODO: 
 
 -extend the library to respond to _http discovery
+
 -extend to respond to _arduino discovery without breaking OTA library
