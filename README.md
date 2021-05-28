@@ -1,4 +1,4 @@
-## Basic mDNS responder for ESP32 ##
+## Basic mDNS responder for ESP32 Arduino IDE ##
 
 The standard mDNS library for ESP32 is not working as well as expected.
 To get at least basic A-record response this library builds on top of
