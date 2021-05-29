@@ -10,8 +10,17 @@ usage:
 
 -After connecting to your network start the responder by object_name.begin()
 
+LIMITATIONS:
+
+-Since mDNS is mostly used in .local domains there is no domaincheck, but .local is assumed
+
+-only support for IP4 networks. Even a request for IP6 is answered with an IP4 address.
 
 TODO: 
+
+-check domains?
+
+-filter out IP6 (AAAA record ) requests?
 
 -extend the library to respond to _http discovery
 
